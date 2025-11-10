@@ -7,10 +7,11 @@
 
     <style>
         .container {
-            border: 2px solid #000000;
-            padding: 30px;
-            margin:30px;
+            padding: 15px;
+            margin:0px;
             background-color: #f0f0f0;
+            display: flex;
+            gap: 20px;
         }
         nav ul {
             list-style-type: none;
@@ -52,6 +53,14 @@
             padding: 10px;
             text-align: left;
         }
+        aside {
+            background-color: #e0e0e0;
+            padding: 15px;
+            margin-top: 20px;
+            order: 2;
+            flex-shrink: 0;
+            min-width: 250px;
+        }   
 
     </style>
 
@@ -68,26 +77,33 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a sample HTML document with embedded CSS and JavaScript.</p>
+        <div style="flex: 1;">
+            <h1>Hello, World!</h1>
+            <p>This is a sample HTML document with embedded CSS and JavaScript.</p>
 
-        <button onclick="alert('Button clicked!')">Click Me</button>
-        <br><br>
-        
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>Alice</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Bob</td>
-                <td>25</td>
-            </tr>
-        </table>
+            <button onclick="alert('Button clicked!')">Click Me</button>
+            <br><br>
+            
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>25</td>
+                </tr>
+            </table>
+        </div>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is an aside section.</p>
+        </aside>
     </div>
 </body>
 </html>
